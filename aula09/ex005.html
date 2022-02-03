@@ -12,11 +12,18 @@
 <body>
     <h1>Primeiros passos com com DOM</h1>
     <p>Olha o resultado aqui</p>
-    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
-    <div>Clica em mim</div>
+    <p id='p2'>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id='msg'>Clica em mim</div>
     <script>
-        var p = window.document.getElementsByTagName('p')[0]
-        window.document.write('Está escrito assim: ' + p.innerText)
+        var corpo = window.document.body
+        corpo.style.background = 'yellow'
+        var p = window.document.getElementsByTagName('p')[0] /* Os colchetes só são necessários se o comando está no plural. Eles indicam qual tag, por ordem crescente, a partir do zero, será usada. */
+        p.style.color = 'blue'
+        //window.document.write('Está escrito assim: ' + p.innerText)
+        var div = document.getElementById('msg')
+        div.style.background ='green'
+        var p2 = document.querySelector('p#p2') //modelo mais recente: por seletor
+        p2.style.background = 'red' 
     </script>
 </body>
 </html>
