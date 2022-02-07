@@ -18,21 +18,11 @@ section{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.452);
 }
 
-#msg{
+#msg, div, footer{
     text-align: center;
 }
 
-#foto{
-    background-image: url('../ex014/imagens/manha.jpg');
-    background-size: cover;
-    background-position: center center;
-    height: 250px;
-    width: 250px;
-    border-radius: 150px;
-    margin: 10px;
-    align-items: center;
-}
-
-footer{
-    text-align: center;
+#imagem{
+    width: 200px;
+    height: 200px;
 }
